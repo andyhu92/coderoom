@@ -94,6 +94,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   body{
+   background:url('../img/white-wall.jpg');
+   }
 /* -- Logo and banner -- */
 #logo{
     display: block;
@@ -160,6 +163,8 @@ div.mainBody h1{
     float:none;
     padding:20px 0;
     margin-bottom:20px;
+    text-shadow:1px 1px 4px #968B8B;
+    letter-spacing: 2px;
 }
 
 div.mainBody ul li div h2{
@@ -451,7 +456,7 @@ footer p{
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1194px){
  nav{
     margin-top: 0px;
 }
@@ -466,6 +471,9 @@ div.mainBody ul li div:hover{
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
   -o-transform: scale(1.15);
+}
+header{
+  display: none;
 }
 }
 
