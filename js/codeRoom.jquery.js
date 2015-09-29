@@ -1,5 +1,5 @@
 'use strict';
-  $(function(){
+  /*$(function(){
      
     var width = 1140;
     var animateSpeed = 1000;
@@ -40,8 +40,14 @@
     $slider.on('mouseenter',pauseSlider).on('mouseleave',startSlider);
     startSlider();
   });
-
+*/
 $(function(){
+  var options = {
+    animateThreshold: 100,
+    scrollPollInterval: 20
+}
+$('.aniview').AniView(options);
+  
   $('#backTop').backTop({
   'position' : 500,
   'color' : 'black',

@@ -27,36 +27,30 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="container">
-        <a href='#'><img src="img/logo.png" alt="logo" id="logo" class="hidden-md hidden-lg"></a>
-        <a href='#'><img src="img/logo1.png" alt="logo" id="logo" class="hidden-xs hidden-sm"></a>
-        <header class="hidden-sm hidden-xs">
-        <div id="slider">
-          <ul class="slides">
-             <li class="slide"> <img src="img/background.jpg" alt="background"/></li>
-             <li class="slide"> <img src="img/background1.jpg" alt="background"/></li>
-             <li class="slide"> <img src="img/background.jpg" alt="background"/></li>
-        </ul>
-        </div>
-       
-        <h1 class="banner animated lightSpeedIn"><span style="color:#CCCCCC">W</span><strong>Here</strong> to get Web Development Resources!</h1>
-        </header>
-        <nav>
+    <a href='#'><img src="img/logo.png" alt="logo" id="logo"></a>
+    <header class="hidden-xs hidden-sm">    
+    <div class="container">
+        <h1 class="banner animated lightSpeedIn  text-center"><span style="color:#CCCCCC">W</span>Here to get Web Development Resources!</h1>
+        <h2 class="animated fadeInRightBig text-center">Exploring the cutting-edge web technology</h2>
+        <h3 class="animated fadeInLeftBig text-center">Start Now!</h3>
+    </div>
+    </header>
+         <nav class="container">
            <ul class="list-unstyled navi">
-              <li><a href="#css" class="button big blue" id="cssLink">CSS Related</a></li>
-              <li><a href="#js" class="button big green" id="jsLink">JavaScript libraries</a></li>
-              <li><a href="#framework" class="button big orange" id="frameworkLink">MV* Frameworks</a></li>
-              <li><a href="#dev" class="button big gray" id="devLink">Dev Tools</a></li>
+              <li><a href="#css" class="button big blue  animated zoomIn" id="cssLink">CSS Related</a></li>
+              <li><a href="#js" class="button big green animated zoomIn" id="jsLink">JavaScript libraries</a></li>
+              <li><a href="#framework" class="button big orange animated zoomIn" id="frameworkLink">MV* Frameworks</a></li>
+              <li><a href="#dev" class="button big gray animated zoomIn" id="devLink">Dev Tools</a></li>
             </ul>
         </nav>
         <!-- Notes -->
         <div class="container mainBody" ng-controller="NotesAllCtrl">
-           <div ng-repeat = "notes in notesAll">
+           <div ng-repeat = "notes in notesAll" >
             <div id="notesHeader">
-           <hr>
+         
            <h1 class='text-center clearfix' id="{{notes.id}}">{{notes.name}}</h1></div>
            <div class="notes">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled aniview" av-animation="fadeIn">
               <li ng-repeat="note in notes.notes"  ng-controller="ModalCtrl">
               <div ng-click="open()">
                 <h2>{{note.title}}</h2>
@@ -99,6 +93,7 @@
         <script src="js/vendor/jquery.backTop.min.js"></script>
   
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.aniview.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/notes.service.js"></script>

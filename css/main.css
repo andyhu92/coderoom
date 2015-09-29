@@ -95,15 +95,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
    body{
-   background:url('../img/white-wall.jpg');
+   background:url('../img/wall.jpg');
    }
+header{
+  background:url('../img/bg.jpg') ;
+  height:280px;
+}
 /* -- Logo and banner -- */
 #logo{
     display: block;
-    margin:0 auto;
+    margin:1% auto;
 }
-nav{
-    margin-top: -70px;
+ul.navi{
+  margin:3% auto;
 }
 ul.navi li{
    display: inline;
@@ -116,11 +120,19 @@ a.button{
 h1.banner{
     font-size: 300%;
     font-weight: bold;
-    position:relative;
-    top:-200px;
-    left:150px;
    text-shadow:1px 1px 1px #FFFFFF;
    cursor:context-menu;
+   font-family: 'Oswald', sans-serif;
+}
+header h2{
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    text-shadow:1px 1px 1px black;
+}
+header h3{
+  font-family: 'Oswald', sans-serif;
+  margin-top: 35px;
+    text-shadow:1px 1px 1px #FFFFFF;
 }
 span.white{
     color:white;
