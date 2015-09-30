@@ -484,9 +484,6 @@ div.mainBody ul li div:hover{
   -moz-transform: scale(1.15);
   -o-transform: scale(1.15);
 }
-header{
-  display: none;
-}
 }
 
 @media screen and (max-width: 678px){

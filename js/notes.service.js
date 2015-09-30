@@ -152,6 +152,16 @@ App.factory('Notes',function(){
     bower:'bower install underscore',
     npm:'npm install underscore',
     component:'component install jashkenas/underscore'
+  },
+  {
+    title:'lodash.js',
+    intro:'A JavaScript utility library delivering consistency, modularity, performance, & extras.',
+    tags:['JavaScript','functions'],
+    website:'https://lodash.com/',
+    githusb:'https://github.com/lodash/lodash/',
+    cdn:['https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js','https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'],
+    bower:'bower install lodash',
+    component:'component install lodash'
   }
 
   ]},
@@ -222,12 +232,20 @@ App.factory('Notes',function(){
     npm:'npm install -g bower'
    },
    {
+    title:'Grunt',
+    intro:'Grunt is a Javascript task runner helps you performing repetitive tasks like minification, compilation, unit testing, linting, etc, make your job becomes easier',
+    tags:['Build tool','task runner'],
+    website:'http://gruntjs.com/',
+    github:'https://github.com/gruntjs/',
+    npm:'npm install grunt'
+   },
+   {
     title:'Yeoman',
     intro:'The Yeoman workflow is comprised of three core tools for improving your productivity and satisfaction when building a web app. These tools are: yo - the scaffolding tool from Yeoman; A package manager, such as bower or npm; '+
 'A build tool, such as Grunt or Gulp.',
     tags:['Scaffolding','Generator'],
     website:'http://yeoman.io/',
-    github:'',
+    github:'https://github.com/yeoman/yeoman',
     npm:'npm install -g yo'
    },
  {
