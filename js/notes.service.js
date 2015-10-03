@@ -271,6 +271,31 @@ App.factory('Notes',function(){
     tags:['template'],
     website:'https://html5boilerplate.com/',
     github:'https://github.com/h5bp/html5-boilerplate'
+  },
+  {
+    title:'Jasmine',
+    intro:'Jasmine is a Behavior Driven Development testing framework for JavaScript. It does not rely on browsers, DOM, or any JavaScript framework. Thus it\'s suited for websites, Node.js projects, or anywhere that JavaScript can run.',
+    tags:['test','Behavior-driven'],
+    website:'http://jasmine.github.io/2.0/introduction.html',
+    github:'https://github.com/jasmine/jasmine',
+    cdn:['https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.4/boot.min.js','https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.4/jasmine-html.min.js','https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.4/jasmine.min.css','https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.4/jasmine.min.js'],
+    npm:'npm install -g jasmine'
+  },
+  {
+    title:'Karma',
+    intro:'A simple tool that allows you to execute JavaScript code in multiple real browsers. The main purpose of Karma is to make your test-driven development easy, fast, and fun.',
+    tags:['unit test','test-driven'],
+    website:'http://karma-runner.github.io/0.13/index.html',
+    github:'https://github.com/karma-runner/karma',
+    npm:'npm install karma --save-dev'
+  },
+  {
+    title:'Protractor',
+    intro:'Protractor is an end-to-end test framework for AngularJS applications. Protractor runs tests against your application running in a real browser, interacting with it as a user would.',
+    tags:['end-to-end test'],
+    website:'https://angular.github.io/protractor/#/',
+    github:'https://github.com/angular/protractor',
+    npm:'npm install -g protractor'
   }
    ]}
   ];
