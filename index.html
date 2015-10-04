@@ -74,7 +74,7 @@
         </div>
         <div class="modal-body">
             <ul class="list-group" id="modalList">
-            <li class="list-group-item"><span class="octicon octicon-octoface"></span><b> Github:</b> <a target="_blank" ng-href='{{note.github}}'>{{note.github}}</a></li>
+            <li class="list-group-item"><span class="octicon octicon-mark-github"></span><b> Github:</b> <a target="_blank" ng-href='{{note.github}}'>{{note.github}}</a></li>
             <li class="list-group-item" ng-show="{{note.cdn}}" ng-repeat="cdn in note.cdn"><b>CDN: </b><p>{{cdn}}</p></li> 
             <li class="list-group-item" ng-show="{{note.bower.length}}"><b>Bower:</b><p>{{note.bower}}</p></li>
             <li class="list-group-item" ng-show="{{note.npm.length}}"><b>Npm:</b><p>{{note.npm}}</p></li>
