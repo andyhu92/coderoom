@@ -1,0 +1,18 @@
+            <div id="notesHeader">
+              <h1 class='text-center clearfix' id="{{notes.id}}">{{notes.name}}</h1>
+           </div>
+           <div class="notes">
+            <ul class="list-unstyled aniview" av-animation="fadeIn">
+              <li ng-repeat="note in notes.notes"  ng-controller="ModalCtrl">
+              <div ng-click="open()">
+                <h2>{{note.title}}</h2>
+                <span ng-repeat="tag in note.tags" class="label">{{tag}}</span>
+                <hr>
+                <p>{{note.intro}}</p>
+                <a class="btn btn-md btn-default" style="width:100%" ng-href="{{note.website}}" target="_blank" ng-click="$event.stopPropagation()">Take a Look!</a><hr/>
+                <p class="text-center"><span class="glyphicon glyphicon-share-alt"></span>Click anywhere to view details!</p> 
+              </div>
+              </li>
+            </ul>
+            </div>
+            </div> <!-- notes-->
