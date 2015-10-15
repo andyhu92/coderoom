@@ -99,6 +99,14 @@ App.factory('Notes',function(){
     npm:'npm install express --save'
   },
   {
+    title:'Request',
+    intro:'Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.',
+    tags:['Node.js','http calls'],
+    website:'https://github.com/request/request',
+    github:'https://github.com/request/request',
+    npm:'npm install request'
+  },
+  {
     title:'Jquery',
     intro:'jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.',
     tags:['JavaScript','DOM','event handling'],
