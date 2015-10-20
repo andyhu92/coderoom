@@ -52,10 +52,15 @@ $('.aniview').AniView(options);
   'position' : 500,
   'color' : 'black',
 });
-   $('img#logo').hover(function(){
-      $(this).toggleClass('animated pulse');
+   $('a.button').on('mouseenter',function(){
+      var self  = $(this);
+      self.removeClass("zoomIn");
+      self.addClass("pulse");
+      setTimeout(function(){
+        self.removeClass('pulse');
+      }, 1000);
    });
-     $("#cssLink,#jsLink,#frameworkLink,#devLink").click(
+     $("#cssLink,#jsLink,#frameworkLink,#devLink,#nodeLink,#dbLink").click(
         function(){
     var height = $($(this).attr('href')).offset().top;
     console.log(height);

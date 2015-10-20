@@ -84,29 +84,6 @@ App.factory('Notes',function(){
   ,
   {name:"JavaScript",id:"js",notes:[
   {
-    title:'Node.js',
-    intro:'Node.js® is a JavaScript runtime built on Chrome\'s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js\' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.',
-    tags:['JavaScript','Server','Asynchronous'],
-    website:'https://nodejs.org/en/',
-    github:'https://github.com/nodejs/node'
-  },
-    {
-    title:'Express.js',
-    intro:'Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.',
-    tags:['JavaScript','Node.js','Route'],
-    website:'http://expressjs.com/',
-    github:'https://github.com/strongloop/express',
-    npm:'npm install express --save'
-  },
-  {
-    title:'Request',
-    intro:'Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.',
-    tags:['Node.js','http calls'],
-    website:'https://github.com/request/request',
-    github:'https://github.com/request/request',
-    npm:'npm install request'
-  },
-  {
     title:'Jquery',
     intro:'jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.',
     tags:['JavaScript','DOM','event handling'],
@@ -227,7 +204,7 @@ App.factory('Notes',function(){
    {
     title:'npm',
     intro:'npm is the package manager for javascript.',
-    tags:['Package manager'],
+    tags:['Node.js','Package manager'],
     website:'https://www.npmjs.com/',
     github:'https://github.com/npm/npm'
    },
@@ -305,7 +282,68 @@ App.factory('Notes',function(){
     github:'https://github.com/angular/protractor',
     npm:'npm install -g protractor'
   }
-   ]}
+   ]},
+   {
+    name:"Node.js",id:"node", notes:[
+     {
+    title:'Node.js',
+    intro:'Node.js® is a JavaScript runtime built on Chrome\'s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js\' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.',
+    tags:['JavaScript','Server','Asynchronous'],
+    website:'https://nodejs.org/en/',
+    github:'https://github.com/nodejs/node'
+  },
+    {
+    title:'Express.js',
+    intro:'Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.',
+    tags:['JavaScript','Node.js','Route'],
+    website:'http://expressjs.com/',
+    github:'https://github.com/strongloop/express',
+    npm:'npm install express --save'
+  },
+  {
+    title:'Request',
+    intro:'Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.',
+    tags:['Node.js','http calls'],
+    website:'https://github.com/request/request',
+    github:'https://github.com/request/request',
+    npm:'npm install request'
+  },
+  {
+    title:'Socket.io',
+    intro:'Socketio is a Realtime application framework based on Node.JS server. Socketio featuring the fastest and most reliable real-time engine',
+    tags:['Node.js','real-time'],
+    website:'http://socket.io/',
+    github:'https://github.com/socketio/socket.io/'
+  }
+    
+    ]
+   },
+   {
+    name:"Databases",id:"db",notes:[
+   {
+    title:"Redis",
+    intro:'Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, HyperLogLogs, Bitmaps.',
+    tags:['NoSQL'],
+    website:"http://redis.io/",
+    github:"https://github.com/antirez/redis",
+  },
+  {
+    title:"Rethinkdb",
+    intro:'RethinkDB is the first open-source scalable database built for realtime applications. It exposes a new database access model -- instead of polling for changes, the developer can tell the database to continuously push updated query results to applications in realtime. ',
+    tags:['NoSQL'],
+    website:'http://rethinkdb.com/',
+    github:'https://github.com/rethinkdb/rethinkdb'
+  },
+  {
+    title:"MongoDB",
+    intro:'MongoDB is an open-source, document database designed for ease of development and scaling.',
+    tags:['NoSQL'],
+    website:'https://www.mongodb.org/',
+    github:'https://github.com/mongodb/mongo'
+  }
+    ]
+
+   }
   ];
 };
    return notes;

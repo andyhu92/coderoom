@@ -98,24 +98,31 @@ textarea {
    background:url('../img/wall.jpg');
    }
 header{
-  background:url('../img/bg.jpg') ;
-  height:280px;
+  background: url('../img/bg.jpg');
+  background-size: cover;
+  padding: 20px;
 }
 /* -- Logo and banner -- */
 #logo{
     display: block;
-    margin:1% auto;
+    margin:0 auto;
+    margin-bottom: 10px;
+    border-bottom: 2px groove black;
 }
-ul.navi{
-  margin:3% auto;
+nav{
+  padding:10px;
+}
+div.banner h2{
+  margin-bottom: 20px;
 }
 ul.navi li{
    display: inline;
    margin:5px;
 }
 a.button{
-    width: 23.5%;
+    width: 30.5%;
     text-align: center;
+    margin-top:3px;
 }
 h1.banner{
     font-size: 300%;
@@ -138,31 +145,6 @@ span.white{
     color:white;
     text-shadow:1px 1px 1px lightgray;
 }
-/*-- Banner slider --*/
- #slider{
-        width:1140px;
-        height:265px;
-        overflow:hidden;
-        padding:0;
-        margin: 0 auto;
- }
-#slider .slides{
-         width:5700px;
-         height:265px;
-         margin:0;
-         padding:0;
-  }
-li.slide{
-        display:inline;
-        float:left;
-        list-style-type: none;
-        width:1140px;
-        height:265px;
-  }
-li.slide img{
-    border-radius:10px;
-}
-
 /* -- */
 a:link,a:visited,a:hover,a:active{
     text-decoration: none;
@@ -175,7 +157,7 @@ div.mainBody h1{
     float:none;
     padding:20px 0;
     margin-bottom:20px;
-    text-shadow:1px 1px 4px #968B8B;
+    text-shadow:1px 2px 4px #FFF;
     letter-spacing: 2px;
 }
 
@@ -288,14 +270,12 @@ ul#modalList li a{
 
 /* -- footer -- */
 footer{
+    color:#000;
     font-weight: bold;
     border-top: 2px groove black;
     margin-top: 50px;
-}
-footer p{
-    display: inline;
-    float:right;
-    margin-left: 1%;
+    padding:10px;
+    text-shadow:1px 1px 2px #fff;
 }
 
 
@@ -467,7 +447,24 @@ footer p{
         page-break-after: avoid;
     }
 }
-
+@media screen and (min-width: 992px){
+  #logo{
+    margin:15px auto;
+  }
+  ul.navi{
+    text-align: center;
+  }
+  a.button{
+    width:25.5%;
+    height:80px;
+    line-height: 70px;
+    margin-top: 8px;
+    transition:all 0.5s;
+  }
+  a.button:hover{
+ 
+  }
+}
 @media screen and (max-width: 1194px){
  nav{
     margin-top: 0px;
@@ -507,12 +504,8 @@ div.mainBody ul li div:hover{
 div.notes span{
     font-size: 80%;
 }
-footer{
+footer span{
     text-align: center;
 }
-footer p{
-    width:100%;
-    float:none;
-    border-top: 1px solid #eeeeee;
-}
+
 }

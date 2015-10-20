@@ -27,22 +27,26 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-    <a href='#'><img src="img/logo.png" alt="logo" id="logo"></a>
-    <header class="hidden-xs">    
-    <div class="container">
-        <h1 class="banner animated lightSpeedIn  text-center"><span style="color:#CCCCCC">W</span>Here to get Web Development Resources!</h1>
-        <h2 class="animated fadeInRightBig text-center">Exploring the cutting-edge web technology</h2>
-        <h3 class="animated fadeInLeftBig text-center">Start Now!</h3>
+ 
+    <header>    
+    <div class="container banner">
+        <img src="img/logo.png" alt="logo" id="logo" class="animated fadeInLeftBig">
+        <h1 class="banner animated lightSpeedIn text-center hidden-xs"><span style="color:#EEE">W</span>Here to find Web Development Resource</h1>
     </div>
-    </header>
-         <nav class="container">
+         <nav>
            <ul class="list-unstyled navi">
               <li><a href="#css" class="button big blue  animated zoomIn" id="cssLink">CSS Related</a></li>
-              <li><a href="#js" class="button big green animated zoomIn" id="jsLink">JavaScript libraries</a></li>
+              <li><a href="#js" class="button big red animated zoomIn" id="jsLink">JavaScript libraries</a></li>
               <li><a href="#framework" class="button big orange animated zoomIn" id="frameworkLink">MV* Frameworks</a></li>
-              <li><a href="#dev" class="button big gray animated zoomIn" id="devLink">Dev Tools</a></li>
+              <li><a href="#dev" class="button big black animated zoomIn" id="devLink">Dev Tools</a></li>
+              <li><a href="#node" class="button big green animated zoomIn" id="nodeLink">Exploring Node.js</a></li>
+              <li><a href="#db" class="button big white animated zoomIn" id="dbLink">Databases</a></li>
             </ul>
         </nav>
+    </header>
+
+
+         
         <!-- Notes -->
         <div class="container mainBody" ng-controller="NotesAllCtrl">
            <div ng-repeat = "notes in notesAll" >
@@ -69,7 +73,7 @@
         </div>
     </script>
            <a id='backTop' title="back to top" class="hidden-xs hidden-sm">Back To Top</a>
-        <footer class="container"> Andy's Factory &copy -2015<p id="ftSpan"> alreadyusedagain@gmail.com</p>
+        <footer class="container"> <span class="pull-left">Andy's Factory &copy -2015</span><span class="pull-right"> alreadyusedagain@gmail.com</span>
         </footer>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
