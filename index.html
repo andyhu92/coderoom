@@ -13,15 +13,43 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/buttons.css">
         <link rel="stylesheet" href="css/octicons/octicons.css">
         <link rel="stylesheet" href="css/backTop.css" >
         <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+        <style>
+        .css.ng-enter,.js.ng-enter,.framework.ng-enter{
+-webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-animation: rotateCubeLeftIn .6s both ease-in;
+    animation: rotateCubeLeftIn .6s both ease-in;
+}
+.css.ng-leave,.js.ng-leave,.framework.ng-leave{
+-webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-animation: rotateCubeRightOut .6s both ease-in;
+    animation: rotateCubeRightOut .6s both ease-in;
+}
+        .dev.ng-enter,.node.ng-enter,.db.ng-enter{
+-webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-animation: rotateCubeTopIn .6s both ease-in;
+    animation: rotateCubeTopIn .6s both ease-in;
+}
+.dev.ng-leave,.node.ng-leave,.db.ng-leave{
+-webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-animation: rotateCubeBottomOut .6s both ease-in;
+    animation: rotateCubeBottomOut .6s both ease-in;
+}
+
+        </style>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
     </head>
-    <body>
+    <body ng-controller="mainCtrl">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -31,30 +59,32 @@
     <header>    
     <div class="container banner">
         <img src="img/logo.png" alt="logo" id="logo" class="animated fadeInLeftBig">
-        <h1 class="banner animated lightSpeedIn text-center hidden-xs"><span style="color:#EEE">W</span>Here to find Web Development Resource</h1>
     </div>
-         <nav>
+    <nav>
            <ul class="list-unstyled navi">
-              <li><a href="#css" class="button big blue  animated zoomIn" id="cssLink">CSS Related</a></li>
-              <li><a href="#js" class="button big red animated zoomIn" id="jsLink">JavaScript libraries</a></li>
-              <li><a href="#framework" class="button big orange animated zoomIn" id="frameworkLink">MV* Frameworks</a></li>
-              <li><a href="#dev" class="button big black animated zoomIn" id="devLink">Dev Tools</a></li>
-              <li><a href="#node" class="button big green animated zoomIn" id="nodeLink">Exploring Node.js</a></li>
-              <li><a href="#db" class="button big white animated zoomIn" id="dbLink">Databases</a></li>
+              <li><a class="button big blue  animated zoomIn" id="cssLink" ng-click="move.set(1)" >CSS Related</a></li>
+              <li><a  class="button big red animated zoomIn" id="jsLink"ng-click="move.set(2)">JavaScript libraries</a></li>
+              <li><a class="button big orange animated zoomIn" id="frameworkLink"ng-click="move.set(3)">MV* Frameworks</a></li>
+              <li><a class="button big black animated zoomIn" id="devLink"ng-click="move.set(4)">Dev Tools</a></li>
+              <li><a class="button big green animated zoomIn" id="nodeLink"ng-click="move.set(5)">Exploring Node.js</a></li>
+              <li><a  class="button big white animated zoomIn" id="dbLink"ng-click="move.set(6)">Databases</a></li>
             </ul>
-        </nav>
+    </nav>
     </header>
 
 
          
         <!-- Notes -->
-        <div class="container mainBody" ng-controller="NotesAllCtrl">
-           <div ng-repeat = "notes in notesAll" >
+        <main class="container" ng-controller="NotesAllCtrl">
+      
+                  
+        <div class="mainBody">
+           <div ng-repeat ="notes in notesAll" ng-if="$index+1 == id" class="{{notes.id}}">
            <note-card></note-card>
 
            </div> <!-- ngRepeat notesAll -->
         </div> <!-- mainBody -->
-      
+      </main>
     <script type="text/ng-template" id="myModalContent.html">
         <div class="modal-header">
             <h3 class="modal-title">{{note.title}}</h3>

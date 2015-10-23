@@ -1,8 +1,20 @@
-App.controller('NotesAllCtrl',function (Notes,$scope){
-    $scope.notesAll = Notes.query();
-})
+App.controller('mainCtrl',['$scope',function ($scope){
+   $scope.move = {
+      set:function(num){
+         $scope.$broadcast('change',num.toString());
+      }
+   }
 
-App.controller('ModalCtrl', function ($scope, $modal) {
+}]);
+App.controller('NotesAllCtrl',['Notes','$scope',function (Notes,$scope){
+    $scope.notesAll = Notes.query();
+     $scope.id='1';
+     $scope.$on('change',function (event,args){
+      $scope.id = args;
+     })
+}]);
+
+App.controller('ModalCtrl', ['$scope','$modal',function ($scope, $modal) {
 
   $scope.animationsEnabled = true;
 
@@ -24,17 +36,17 @@ App.controller('ModalCtrl', function ($scope, $modal) {
     $scope.animationsEnabled = !$scope.animationsEnabled;
   };
 
-});
+}]);
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-angular.module('note-modal').controller('ModalInstanceCtrl', function ($scope, $modalInstance,note) {
+App.controller('ModalInstanceCtrl', ['$scope','$modalInstance','note',function ($scope, $modalInstance,note) {
   $scope.note = note;
   $scope.ok = function () {
     $modalInstance.close();
   };
 
-});
+}]);
 
 

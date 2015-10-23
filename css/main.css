@@ -207,6 +207,7 @@ div.mainBody ul li:nth-child(4n+1) div{
   top:5px;
   background:#afa;
 }
+
 div.mainBody ul li:nth-child(4n+2) div{
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
@@ -449,15 +450,15 @@ footer{
 }
 @media screen and (min-width: 992px){
   #logo{
-    margin:15px auto;
+    margin:5px auto;
   }
   ul.navi{
     text-align: center;
   }
   a.button{
     width:25.5%;
-    height:80px;
-    line-height: 70px;
+    height:70px;
+    line-height: 60px;
     margin-top: 8px;
     transition:all 0.5s;
   }

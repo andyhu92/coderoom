@@ -172,7 +172,7 @@
 }
 .red.button{
 	color:#525252 !important;
-	border: 1.1px solid #FDEBEB !important;	
+	border: 1.1px solid #E64A4A !important;	
 	background-color: #FF829E;
 	
 	background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(197,199,202,1) 0,rgba(197,199,202,0) 100px),-moz-linear-gradient(#c5c7ca, #92989c);
@@ -200,7 +200,7 @@
     background-color: #EFE7E8;
     background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(202,205,208,1) 0,rgba(202,205,208,0) 100px),-moz-linear-gradient(#d1d3d6, #9fa5a9);
 	
-    background-image: url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgb(245, 244, 244)), to(rgba(202,205,208,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#E0E0E0), to(#D9C8F3));
+    background-image: url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgb(245, 244, 244)), to(rgba(202,205,208,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#A09E9E), to(#D9C8F3));
 }
 .black.button{
 	color: #FFFFFF !important;
@@ -208,7 +208,7 @@
 	background-color: #676767;
 	
 	background-image:url('button_bg.png'), url('button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(197,199,202,1) 0,rgba(197,199,202,0) 100px),-moz-linear-gradient(#c5c7ca, #92989c);
-	background-image: url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgb(23, 22, 22)), to(rgba(218, 218, 218, 0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#989394), to(#9E9E9E));
+	background-image: url('button_bg.png'), url('button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgb(23, 22, 22)), to(rgba(218, 218, 218, 0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#615D5E), to(#9E9E9E));
 }
 
 .black.button:hover{
