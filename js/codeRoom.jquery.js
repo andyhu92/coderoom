@@ -18,12 +18,13 @@ $('.aniview').AniView(options);
         self.removeClass('pulse');
       }, 1000);
    });*/
-     $("#cssLink,#jsLink,#frameworkLink,#devLink,#nodeLink,#dbLink").click(
+  /*   $("#cssLink,#jsLink,#frameworkLink,#devLink,#nodeLink,#dbLink").click(
         function(){
     var height = $($(this).attr('href')).offset().top;
     console.log(height);
     $('body').animate({
       scrollTop: height},'slow');
    });
+*/
    })
 

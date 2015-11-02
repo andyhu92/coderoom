@@ -22,6 +22,30 @@ App.factory('Notes',function(){
     bower:'bower install foundation',
     npm:'npm install foundation-sites'
   },
+  {
+    title:'Less',
+    intro:'Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable.',
+    tags:['css','pre-processor'],
+    website:'http://lesscss.org/',
+    github:'https://github.com/less/less.js',
+    cdn:['https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.js','https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js'],
+    bower:'bower install less',
+    npm:'npm install -g less'
+  },
+  {
+    title:'Sass',
+    intro:'Sass is an extension of CSS, adding nested rules, variables, mixins, selector inheritance, and more. It\'s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.',
+    tags:['css','pre-processor'],
+    website:'http://sass-lang.com/',
+    github:'https://github.com/sass/sass'
+  },
+  {
+    title:'Compass',
+    intro:'Compass is a Stylesheet Authoring Environment that makes your website design simpler to implement and easier to maintain',
+    tags:['css','environment'],
+    website:'http://compass-style.org',
+    github:'https://github.com/Compass/compass'
+  },
   { 
     title:'Semantic UI',
     intro:'Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML. It have concise HTML, intuitive JavaScript and also simplified debugging process',
@@ -233,23 +257,6 @@ App.factory('Notes',function(){
     github:'https://github.com/yeoman/yeoman',
     npm:'npm install -g yo'
    },
- {
-    title:'Less',
-    intro:'Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable.',
-    tags:['css','pre-processor'],
-    website:'http://lesscss.org/',
-    github:'https://github.com/less/less.js',
-    cdn:['https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.js','https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js'],
-    bower:'bower install less',
-    npm:'npm install -g less'
-  },
-  {
-    title:'Sass',
-    intro:'Sass is an extension of CSS, adding nested rules, variables, mixins, selector inheritance, and more. It\'s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.',
-    tags:['css','pre-processor'],
-    website:'http://sass-lang.com/',
-    github:'https://github.com/sass/sass'
-  },
   {
     title:'Html5-boilerplate',
     intro:'The web’s most popular front-end template: HTML5 Boilerplate helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.',

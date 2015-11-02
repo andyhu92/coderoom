@@ -266,7 +266,7 @@ ul#modalList li p{
 }
 ul#modalList li a{
     display: block;
-     word-wrap:break-word;
+    word-wrap:break-word;
 }
 
 /* -- footer -- */
@@ -278,7 +278,12 @@ footer{
     padding:10px;
     text-shadow:1px 1px 2px #fff;
 }
-
+.footer-left{
+  float:left;
+}
+.footer-right{
+  float:right;
+}
 
 
 /* ==========================================================================
@@ -505,8 +510,15 @@ div.mainBody ul li div:hover{
 div.notes span{
     font-size: 80%;
 }
-footer span{
+footer{
     text-align: center;
 }
+.footer-left{
+  float:none;
+}
+.footer-right{
+  float:none;
+}
+
 
 }
