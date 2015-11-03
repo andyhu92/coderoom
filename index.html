@@ -55,7 +55,10 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
- 
+    <div class="shadow visible-lg visible-md" id="shadow">
+    <div id="enter_button"><img src="img/buttons.png"/></div>
+
+    </div>
     <header>    
     <div class="container banner">
         <img src="img/logo.png" alt="logo" id="logo" class="animated fadeInLeftBig">
@@ -75,11 +78,9 @@
 
          
         <!-- Notes -->
-        <main class="container" ng-controller="NotesAllCtrl">
-      
-                  
+        <main class="container" ng-controller="NotesAllCtrl">             
         <div class="mainBody">
-           <div ng-repeat ="notes in notesAll" ng-if="$index+1 == id" class="{{notes.id}}">
+           <div ng-repeat ="notes in notesAll" ng-if="$index+1 == id" class="{{notes.id}} animated slideInUp">
            <note-card></note-card>
 
            </div> <!-- ngRepeat notesAll -->

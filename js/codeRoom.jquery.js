@@ -10,6 +10,14 @@ $('.aniview').AniView(options);
   'position' : 500,
   'color' : 'black',
 });
+
+$("#enter_button").click(function(){
+   $('div#shadow').addClass('animated zoomOutRight');
+   setTimeout(function(){
+    $('div#shadow').remove();
+  },400);
+   $('header,div.mainBody').fadeIn('2000');
+})
   /* $('a.button').on('mouseenter',function(){
       var self  = $(this);
       self.removeClass("zoomIn");
