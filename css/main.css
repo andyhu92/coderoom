@@ -97,20 +97,25 @@ textarea {
    body{
    background:url('../img/wall.jpg');
    }
+   /*-- enter screen -- */
    #shadow{
-    background: url('../img/shadow.jpg');
-    background-size: cover;
-     position:absolute;
-     width:100%;
-     height:100%;
+    position: absolute;
+    width:100%;
+    height:100%;
   -moz-animation-duration: 1s;
   -webkt-animation-duration: 1s;
   -o-animation-duration: 1s;
   animation-duration: 1s;
    }
+   #shadow > img{
+    position: relative;
+    width:100%;
+    height:100%;
+   }
    div#enter_button{
     position:relative;
-    top:350px;
+    z-index: 100;
+    top:-300px;
      text-align: center;
      height:150px;
      overflow: hidden;
@@ -119,8 +124,8 @@ textarea {
    div#enter_button img:hover{
       margin-top: -135px;
    }
+   /* -- header -- */
 header{
-
   padding: 20px;
 }
 /* -- Logo and banner -- */
@@ -144,7 +149,6 @@ a.button{
     width: 30.5%;
     text-align: center;
     margin-top:3px;
-    box-shadow: 1px 2px 2px black;
 }
 h1.banner{
     font-size: 300%;
@@ -305,6 +309,16 @@ footer{
 }
 .footer-right{
   float:right;
+}
+a#small_backTop,a#small_backTop:hover{
+   text-decoration: none;
+}
+a#small_backTop{
+   width:30%;
+   background-color: black;
+   color:white;
+   border-radius: 5px;
+   margin:10px auto;
 }
 
 
@@ -478,7 +492,7 @@ footer{
 
 /*---- responsive design ----- */
 @media screen and (min-width: 992px){
-  header,div.mainBody{
+  header,div.mainBody,footer{
      display: none;
   }
   #logo{
@@ -493,6 +507,7 @@ footer{
     line-height: 60px;
     margin-top: 8px;
     transition:all 0.5s;
+    box-shadow: 1px 2px 2px black;
   }
 }
 @media screen and (max-width: 1194px){
@@ -501,7 +516,7 @@ footer{
 }
 a.button{
     width: 44.5%;   
-    margin-top:3px;
+    margin-top:5px;
 }
 div.mainBody ul li{
     width:45%;
@@ -519,8 +534,8 @@ div.mainBody ul li div:hover{
 }
 a.button{
     width: 100%;   
-    margin-top:3px;
 }
+
 div.mainBody ul li{
     width:100%;
     height:auto;

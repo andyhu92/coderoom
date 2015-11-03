@@ -56,6 +56,7 @@
 
         <!-- Add your site or application content here -->
     <div class="shadow visible-lg visible-md" id="shadow">
+        <img src="img/shadow.jpg" alt="shadow"/>
     <div id="enter_button"><img src="img/buttons.png"/></div>
 
     </div>
@@ -80,7 +81,7 @@
         <!-- Notes -->
         <main class="container" ng-controller="NotesAllCtrl">             
         <div class="mainBody">
-           <div ng-repeat ="notes in notesAll" ng-if="$index+1 == id" class="{{notes.id}} animated slideInUp">
+           <div ng-repeat ="notes in notesAll" ng-if="$index+1 == id" class="{{notes.id}} removeAnimate">
            <note-card></note-card>
 
            </div> <!-- ngRepeat notesAll -->
@@ -105,6 +106,7 @@
     </script>
            <a id='backTop' title="back to top" class="hidden-xs hidden-sm">Back To Top</a>
         <footer class="container"> <span class="footer-left">Andy's Factory &copy -2015 </span><a href="https://github.com/andyhu92/coderoom" style="margin-left:5px;color:black" target="_blank"><span class="octicon octicon-mark-github"></span></a><span class="footer-right"> alreadyusedagain@gmail.com</span>
+        <a class="visible-xs" id="small_backTop" href='#'>Back To Top</a>
         </footer>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

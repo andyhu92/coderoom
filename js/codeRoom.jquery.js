@@ -10,14 +10,22 @@ $('.aniview').AniView(options);
   'position' : 500,
   'color' : 'black',
 });
-
+// enter screen
 $("#enter_button").click(function(){
    $('div#shadow').addClass('animated zoomOutRight');
+   $("div.removeAnimate").addClass("animated slideInUp");
    setTimeout(function(){
     $('div#shadow').remove();
-  },400);
-   $('header,div.mainBody').fadeIn('2000');
+    $("div.removeAnimate").removeClass("animated slideInUp removeAnimate");
+  },1000);
+   $('header,div.mainBody,footer').fadeIn();
+});
+//back to top
+$("#small_backTop").click(function(e){
+  e.preventDefault();
+  $('body').animate({"scrollTop":0}, 600);
 })
+//menu toggle
   /* $('a.button').on('mouseenter',function(){
       var self  = $(this);
       self.removeClass("zoomIn");
