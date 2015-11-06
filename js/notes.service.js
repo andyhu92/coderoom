@@ -282,6 +282,16 @@ App.factory('Notes',function(){
     npm:'npm install karma --save-dev'
   },
   {
+    title:'QUnit',
+    intro:'QUnit is a powerful, easy-to-use JavaScript unit testing framework. It\'s used by the jQuery, jQuery UI and jQuery Mobile projects and is capable of testing any generic JavaScript code, including itself!',
+    tags:['unit test','test-driven'],
+    website:'http://qunitjs.com/',
+    github:'https://github.com/jquery/qunit',
+    cdn:["http://code.jquery.com/qunit/qunit-1.20.0.js","http://code.jquery.com/qunit/qunit-1.20.0.css"],
+    npm:"npm install --save-dev qunitjs",
+    bower:'bower install --save-dev qunit'
+  },
+  {
     title:'Protractor',
     intro:'Protractor is an end-to-end test framework for AngularJS applications. Protractor runs tests against your application running in a real browser, interacting with it as a user would.',
     tags:['end-to-end test'],
