@@ -28,7 +28,8 @@ App.controller('ModalCtrl', ['$scope','$modal',function ($scope, $modal) {
         note: function () {
           return $scope.note;
         }
-      }
+      },
+      size:'lg'
     });
   };
 

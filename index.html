@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/buttons.css">
         <link rel="stylesheet" href="css/octicons/octicons.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/backTop.css" >
         <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
         <style>
@@ -88,22 +89,50 @@
         </div> <!-- mainBody -->
       </main>
     <script type="text/ng-template" id="myModalContent.html">
+
         <div class="modal-header">
             <h3 class="modal-title">{{note.title}}</h3>
         </div>
         <div class="modal-body">
             <ul class="list-group" id="modalList">
             <li class="list-group-item"><span class="octicon octicon-mark-github"></span><b> Github:</b> <a target="_blank" ng-href='{{note.github}}'>{{note.github}}</a></li>
-            <li class="list-group-item" ng-show="{{note.cdn}}" ng-repeat="cdn in note.cdn"><b>CDN: </b><p>{{cdn}}</p></li> 
-            <li class="list-group-item" ng-show="{{note.bower.length}}"><b>Bower:</b><p>{{note.bower}}</p></li>
-            <li class="list-group-item" ng-show="{{note.npm.length}}"><b>Npm:</b><p>{{note.npm}}</p></li>
-            <li class="list-group-item" ng-show="{{note.component}}"><b>Component Install:</b><p>{{note.component}}</p></li>
+            <li class="list-group-item" ng-show="{{note.cdn.length}}" ng-repeat="cdn in note.cdn">
+            <div class="input-group">
+              <span class="input-group-addon"><b>{{"CDN" +($index+1)+":"}}</b></span>          
+              <input readonly="readonly" type="text" value="{{cdn}}" class="form-control" id="{{note.title+'cdn'+$index}}"/>
+               <span class="input-group-btn">
+                <button class="btn btn-default copyInfo" type="button"  data-clipboard-target="#{{note.title+'cdn'+$index}}" data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fa fa-files-o"></i></button>
+              </span>
+            </div></li> 
+            <li class="list-group-item" ng-show="{{note.bower.length}}">
+            <div class="input-group">
+               <span class="input-group-addon"><b>bower:</b></span>          
+              <input readonly="readonly" type="text" value="{{note.bower}}" class="form-control" id="{{note.title+'bower'}}"/>
+               <span class="input-group-btn">
+                <button class="btn btn-default copyInfo" type="button" data-clipboard-target="#{{note.title+'bower'}}"data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fa fa-files-o"></i></button>
+              </span>
+            </div></li>
+            <li class="list-group-item" ng-show="{{note.npm.length}}"><div class="input-group">
+               <span class="input-group-addon"><b>npm:</b></span>          
+              <input readonly="readonly" type="text" value="{{note.npm}}" class="form-control" id="{{note.title+'npm'}}"/>
+               <span class="input-group-btn">
+                <button class="btn btn-default copyInfo" type="button" data-clipboard-target="#{{note.title+'npm'}}"data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fa fa-files-o"></i></button>
+              </span>
+            </div></li>
+            <li class="list-group-item" ng-show="{{note.component}}"><div class="input-group">
+               <span class="input-group-addon"><b>component:</b></span>          
+              <input readonly="readonly" type="text" value="{{note.component}}" class="form-control" id="{{note.title+'component'}}"/>
+               <span class="input-group-btn">
+                <button class="btn btn-default copyInfo" type="button" data-clipboard-target="#{{note.title+'component'}}"data-toggle="tooltip" data-placement="bottom" title="Copy"><i class="fa fa-files-o"></i></button>
+              </span>
+            </div></li>
             </ul>
         </div>
         <div class="modal-footer">
             <button class="btn btn-lg btn-success" type="button" ng-click="ok()">Got it</button>
         </div>
-    </script>
+   
+    </script>>
            <a id='backTop' title="back to top" class="hidden-xs hidden-sm">Back To Top</a>
         <footer class="container"> <span class="footer-left">Andy's Factory &copy -2015 </span><a href="https://github.com/andyhu92/coderoom" style="margin-left:5px;color:black" target="_blank"><span class="octicon octicon-mark-github"></span></a><span class="footer-right"> alreadyusedagain@gmail.com</span>
         <a class="visible-xs" id="small_backTop" href='#'>Back To Top</a>
@@ -114,23 +143,17 @@
   
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.aniview.min.js"></script>
-        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/notes.service.js"></script>
         <script src="js/notes.controller.js"></script>
         <script src="js/notes.directive.js"></script>
                 <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
         <script src="js/codeRoom.jquery.js"></script>
+        <script>
+             new Clipboard('.copyInfo');
+        </script>
     </body>
 </html>
 

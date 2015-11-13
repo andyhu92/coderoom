@@ -284,9 +284,7 @@ div.notes span:nth-child(4n){
 div.mainBody ul li div p span{
     background-color: transparent;
 }
-ul#modalList li:nth-child(even){
-   background-color:#dee;
-}
+
 ul#modalList li p{
     word-wrap:break-word;
 }
@@ -294,7 +292,12 @@ ul#modalList li a{
     display: block;
     word-wrap:break-word;
 }
-
+ul#modalList input[readonly]{
+  background-color: #FFF;
+}
+ul#modalList .input-group-addon{
+  width:10%;
+}
 /* -- footer -- */
 footer{
     color:#000;

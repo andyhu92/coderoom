@@ -1,11 +1,20 @@
 'use strict';
 $(function(){
+  //Tooltip initialize and setting
+$("div.mainBody").on('click','>div',function(){
+   $("[data-toggle='tooltip']").tooltip();
+   $("[data-toggle='tooltip']").on('click',function(){
+    $(this).attr('data-original-title',"copied!");
+    $(this).tooltip('show');
+    $(this).attr('data-original-title',"copy");
+   })
+})
+  //aniview initialize
   var options = {
     animateThreshold: 100,
     scrollPollInterval: 20
 }
-$('.aniview').AniView(options);
-  
+$('.aniview').AniView(options); 
   $('#backTop').backTop({
   'position' : 500,
   'color' : 'black',
@@ -20,6 +29,8 @@ $("#enter_button").click(function(){
   },1000);
    $('header,div.mainBody,footer').fadeIn();
 });
+
+
 //back to top
 $("#small_backTop").click(function(e){
   e.preventDefault();
