@@ -171,6 +171,16 @@ App.factory('Notes',function(){
     cdn:['https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js','https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'],
     bower:'bower install lodash',
     component:'component install lodash'
+  },
+  {
+    title:'Clipboard.js',
+    intro:'Modern copy to clipboard. No Flash. Just 2kb. Copying text to the clipboard shouldn\'t be hard. It shouldn\'t require dozens of steps to configure or hundreds of KBs to load. But most of all, it shouldn\'t depend on Flash or any bloated framework.',
+    tags:['Copy'],
+    website:'http://clipboardjs.com/',
+    github:'https://github.com/zenorocha/clipboard.js',
+    cdn:['https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js'],
+    npm:'npm install clipboard --save',
+    bower:'bower install clipboard --save'
   }
 
   ]},
@@ -331,6 +341,14 @@ App.factory('Notes',function(){
     tags:['Node.js','real-time'],
     website:'http://socket.io/',
     github:'https://github.com/socketio/socket.io/'
+  },
+  {
+    title:'Formidable',
+    intro:'A node.js module for parsing form data, especially file uploads.',
+    tags:['Node.js','Form handle'],
+    website:'https://github.com/felixge/node-formidable',
+    github:'https://github.com/felixge/node-formidable',
+    npm:'npm install formidable@latest'
   }
     
     ]
