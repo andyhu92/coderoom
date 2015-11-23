@@ -259,6 +259,14 @@ App.factory('Notes',function(){
     npm:'npm install grunt'
    },
    {
+    title:"Gulp",
+    intro:"gulp is a toolkit that will help you automate painful or time-consuming tasks in your development workflow. For web development (if that's your thing) it can help you by doing CSS preprocessing, JS transpiling, minification, live reloading, and much more. ",
+    tags:['Build tool','task runner'],
+    website:"http://gulpjs.com/",
+    github:"https://github.com/gulpjs/gulp",
+    npm:"npm install --global gulp"
+   },
+   {
     title:'Yeoman',
     intro:'The Yeoman workflow is comprised of three core tools for improving your productivity and satisfaction when building a web app. These tools are: yo - the scaffolding tool from Yeoman; A package manager, such as bower or npm; '+
 'A build tool, such as Grunt or Gulp.',
@@ -308,6 +316,14 @@ App.factory('Notes',function(){
     website:'https://angular.github.io/protractor/#/',
     github:'https://github.com/angular/protractor',
     npm:'npm install -g protractor'
+  },
+  {
+    title:"JSHint",
+    intro:'JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.',
+    tags:['Javascript','debug'],
+    website:'http://jshint.com/',
+    github:'https://github.com/jshint/jshint',
+    npm:"npm install -g jshint"
   }
    ]},
    {
