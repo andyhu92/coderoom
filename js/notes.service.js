@@ -104,8 +104,8 @@ App.factory('Notes',function(){
     tags:['css','font'],
     website:'https://www.google.com/fonts',
     github:'https://github.com/google/fonts'
-  }]}
-  ,
+  }]
+  },
   {name:"JavaScript",id:"js",notes:[
   {
     title:'Jquery',
@@ -123,6 +123,15 @@ App.factory('Notes',function(){
     website:'http://impress.github.io/impress.js/#/bored',
     github:'https://github.com/impress/impress.js?utm_source=twitterfeed&utm_medium=twitter',
     cdn:['https://netdna.impressjscdn.com/impressjs/0.5.3/js/impress.js']
+  },
+  {
+    title:'D3.js',
+    intro:'D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS.',
+    tags:['Data visualization'],
+    website:'http://d3js.org/',
+    github:'https://github.com/mbostock/d3',
+    cdn:['http://d3js.org/d3.v3.min.js'],
+    npm:'npm install d3'
   },
   {
     title:'Require.js',
